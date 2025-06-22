@@ -3,41 +3,40 @@
 /* Container Styling */
 .container {
     color: var(--color-text);
-    margin: 50px 10%; /* Adjusted margins */
-    padding: 20px;
-    background: #f9f9f9; /* Light background for contrast */
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #060a16ba;
+    /* Deep navy */
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin: 80px auto;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.05);
+    max-width: 1200px;
 }
 
 /* Title Styling */
 .title {
-    font-size: 36px; /* Larger font for prominence */
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 42px;
+    font-weight: 800;
     text-align: center;
-    margin-bottom: 20px;
-    background: linear-gradient(90deg, #457b9d, #ff6b6b); /* Gradient text */
+    background: linear-gradient(90deg,#4b86ab,#ff0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
 }
 
 /* Content Layout */
 .content {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    gap: 30px;
-    margin-top: 20px;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    gap: 40px;
 }
 
 /* Skills Section */
 .skills {
     flex: 1;
     display: flex;
-    flex-wrap: wrap; /* Wrap skills for better alignment */
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -45,107 +44,107 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100px; /* Fixed width for consistency */
+    width: 100px;
 }
 
 .skillImageContainer {
+    background: linear-gradient(135deg, #00c9ff33, #92fe9d33);
     border-radius: 50%;
+    width: 90px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    height: 90px;
-    background-color: var(--color-secondary);
     transition: transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 
 .skillImageContainer img {
-    width: 70%;
+    width: 60%;
     height: auto;
 }
 
 .skill:hover .skillImageContainer {
-    transform: scale(1.15); /* Slight enlargement on hover */
+    transform: scale(1.15);
 }
 
 .skill p {
     font-size: 14px;
-    margin-top: 8px; /* Clean spacing */
-    text-align: center;
-    font-weight: bold;
     color: var(--color-primary);
+    font-weight: 600;
+    margin-top: 8px;
+    text-align: center;
 }
 
 /* Work History Section */
 .history {
-    flex: 2; /* Take more space for details */
+    flex: 2;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .historyItem {
     display: flex;
     gap: 20px;
-    background: linear-gradient(135deg, #ffecd2, #fcb69f); /* Eye-catching gradient */
-    border-radius: 15px;
-    padding: 20px;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(125deg, rgba(0, 0, 0, 0.251), rgba(160, 9, 9, 0.316));
+    padding: 25px;
+    border-radius: 20px;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .historyItem:hover {
-    transform: scale(1.02); /* Slight zoom on hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
 }
 
 .historyItem img {
     width: 60px;
     height: 60px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
 }
 
 .historyItemDetails h3 {
     font-size: 22px;
-    font-weight: 600;
-    margin: 0;
+    font-weight: 700;
     color: var(--color-primary);
+    margin-bottom: 4px;
 }
 
 .historyItemDetails p {
     font-size: 14px;
-    font-weight: 400;
-    margin: 5px 0; /* Minimal spacing */
     color: var(--color-text-secondary);
+    margin-bottom: 10px;
 }
 
 .historyItemDetails ul {
-    margin-top: 8px;
-    list-style-type: disc;
+    list-style: disc;
     padding-left: 20px;
-    font-size: 16px;
     color: var(--color-text);
+    font-size: 16px;
 }
 
-.text li{
-    margin-bottom: 4px;
+.text li {
+    margin-bottom: 6px;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 768px) {
     .content {
-        flex-direction: column; /* Stack skills and history vertically */
+        flex-direction: column;
         align-items: center;
-        gap: 40px;
     }
 
-    .skills, .history {
+    .skills,
+    .history {
         width: 100%;
     }
 
     .skill {
-        width: 80px; /* Adjust size for smaller screens */
+        width: 80px;
     }
 
     .skillImageContainer {
@@ -154,7 +153,7 @@
     }
 
     .historyItem {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column;
         text-align: center;
     }
 

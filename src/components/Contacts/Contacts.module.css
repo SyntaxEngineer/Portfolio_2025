@@ -1,18 +1,19 @@
 .container {
-    background: linear-gradient(135deg, #1d3557, #a8dadc);
+    background: linear-gradient(125deg, #010a17, #073a50);
     padding: 60px 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
     border-top: 8px solid #ff6b6b;
+    margin-top: 15px;
 }
 
 .text h2 {
     font-size: 70px;
     font-weight: bold;
     letter-spacing: 5px;
-    background: linear-gradient(90deg, #457b9d, #ff6b6b);
+    background: linear-gradient(90deg, #457b9d, #e34b4b);
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
@@ -20,7 +21,7 @@
 
 .text p {
     font-size: 30px;
-    color: #ed6b6b;
+    color: #e34b4b;
     font-family: 'Caveat', cursive;
     text-align: center;
 }

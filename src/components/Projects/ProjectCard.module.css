@@ -1,46 +1,44 @@
+@import '../../vars.css';
+
 .container {
-    background: #ffffff; /* Neutral card background */
+    background: linear-gradient(135deg, rgba(0, 201, 255, 0.05), rgba(146, 254, 157, 0.05));
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 20px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    flex: 0 0 30%; /* Adjust the width of each card */
-    margin: 10px; /* Add some space between cards */
+    padding: 25px;
+    flex: 0 0 300px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
 .container:hover {
-    transform: rotateY(5deg) rotateX(5deg); /* 3D tilt effect */
-    /*box-shadow: 0 10px 20px rgba(0, 0, 255, 0.4);*/ /* Shadow with a soft blue glow */
-    box-shadow: 0 10px 20px rgba(188, 102, 222, 0.4);
-}  
-
-
-
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(68, 20, 83, 0.834);
+}
 
 .image {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .title {
     font-size: 20px;
-    font-weight: bold;
-    color: #1d3557;
-    margin-bottom: 10px;
+    font-weight: 700;
     text-align: center;
-    background: linear-gradient(90deg, #457b9d, #ff6b6b);
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #00c9ff, #92fe9d);
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .description {
     font-size: 16px;
-    color: #457b9d; /* Softer text color */
+    color: var(--color-text-secondary);
     text-align: center;
     margin-bottom: 15px;
 }
@@ -52,47 +50,41 @@
     gap: 10px;
     list-style: none;
     padding: 0;
+    margin-bottom: 10px;
 }
 
 .skill {
-    background: #a8dadc;
-    color: #1d3557;
+    background: rgba(46, 44, 44, 0.05);
+    color: var(--color-primary);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 6px 12px;
     font-size: 14px;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 20px; /* Pill-shape */
-    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 16px;
+    transition: all 0.3s ease;
 }
 
 .skill:hover {
-    background: #457b9d; /* Hover effect */
-    color: #ffffff;
-    transform: scale(1.1); /* Slight scale-up */
+    background: var(--color-primary);
+    color: #0f172a;
 }
 
 .links {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 15px;
 }
 
-
 .link {
-    text-decoration: none;
-    color: #ffffff; /* Initial text color */
-    font-size: 16px;
-    font-weight: bold;
+    background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    color: #0f172a;
+    font-weight: 600;
+    padding: 8px 14px;
     border-radius: 20px;
-    padding: 8px 15px;
-    background: linear-gradient(135deg, #6a0572, #36d1dc); /* New gradient colors */
-    
+    text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
 .link:hover {
-    
     transform: scale(1.1);
-    
-    color: #ffffff; /* Maintain text color on hover */
 }
-
-

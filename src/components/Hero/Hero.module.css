@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 10%;
+    margin: 60px 10%;
     z-index: 1;
     padding: 20px;
 }
@@ -22,16 +22,18 @@
 }
 
 .title {
-    font-size: 64px;
-    font-weight: 900;
-    margin-bottom: 30px;
-    margin-top: 50px;
+    font-size: 55px;
+    /* down from 64px */
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 40px;
     font-family: var(--font-roboto);
     background: linear-gradient(90deg, #5E60CE 0%, #4361EE 60%, #4CC9F0 120%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    line-height: 1.2;
-}
+    white-space: nowrap;
+    /* prevents the line from breaking */
+    line-height: 1.2; }
 /* .title {
     font-size: 68px;
     font-weight: 900;
@@ -66,7 +68,7 @@
 /* Contact Button */
 .contactBtn {
     text-decoration: none;
-    background-color: #4CC9F0;
+    background-color: #4ccaf0c8;
     color: #ffffff;
     border-radius: 30px;
     font-size: 20px;
